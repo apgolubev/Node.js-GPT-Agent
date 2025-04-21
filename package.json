@@ -1,0 +1,17 @@
+{
+  "name": "Open Source GPTAgent - OpenAI",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "tsx src/gpt-terminal.ts",
+    "build": "esbuild src/gpt-terminal.ts --bundle --platform=node --target=node18 --outfile=dist/gpt-terminal.js"
+  },
+  "dependencies": {
+    "openai": "^4.95.0",
+    "pako": "^2.1.0",
+    "@types/pako": "^2.0.3"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.3",
+    "typescript": "^5.0.0"
+  }
+}
