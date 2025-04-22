@@ -74,8 +74,8 @@ U: Write weather data to files
 
 #### telegram-manager
 ```
-U: Send 'Hi!' to chat_id 112414183
-A: The message "Hi!" has been sent to chat_id 112414183 using the bot Terminal GPTAgent (@TerminalGPTAgent_bot).
+U: Send 'Hi!' to chat_id 112414***
+A: The message "Hi!" has been sent to chat_id 112414*** using the bot Terminal GPTAgent (@TerminalGPTAgent_bot).
 ```
 
 #### mermaid-agent
