@@ -42,6 +42,9 @@ Examples of agents with configured Tools (function_call):
 ### Combine Agents
 [gpt-combine-agents.ts](src/gpt/gpt-combine-agents.ts) allows combining agents and sequentially performing complex chains of operations.
 
+### Support author
+[!["Buy us ☕️ coffee and 🐶 treat ❤️"](https://github.com/apgolubev/apgolubev/blob/main/assets/patreon-buy-coffee-and-treat.png?raw=true)](https://patreon.com/user?u=77885474)
+
 ### Examples
 #### rest-agent
 ```
