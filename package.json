@@ -4,9 +4,8 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "start": "tsx examples/gpt-terminal.ts",
+    "start": "npm run npm:preview && tsx examples/gpt-terminal.ts",
     "build": "tsc",
-    "build:bundle": "esbuild src/index.ts --bundle --platform=node --target=node18 --outfile=dist/gpt-agent.js",
     "npm:preview": "npm run build && mkdir -p preview && npm pack && tar -xvzf *.tgz -C preview && rm -rf node_modules/gpt-agent && mv preview/package node_modules/gpt-agent && rm -rf preview && rm gpt-agent-*.tgz"
   },
   "files": [
