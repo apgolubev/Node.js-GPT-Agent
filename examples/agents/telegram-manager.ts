@@ -1,4 +1,4 @@
-import {GPTAgentConfig} from '../gpt/gpt-agent';
+import {AssistantConfig} from 'gpt-agent';
 
 function sendToBot(arg: { [key: string]: any }): Promise<string> {
     const token = arg.token;
@@ -19,7 +19,7 @@ function sendToBot(arg: { [key: string]: any }): Promise<string> {
     });
 }
 
-export function TelegramManager(demoBot: string): GPTAgentConfig {
+export function TelegramManager(demoBot: string): AssistantConfig {
     return {
         name: 'Telegram Manager',
         helloMessage: `

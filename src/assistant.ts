@@ -1,7 +1,7 @@
 import {OpenAI} from 'openai';
 import {AssistantTool} from 'openai/resources/beta';
 
-export interface GPTAgentConfig {
+export interface AssistantConfig {
     name: string;
     tools: AssistantTool[];
     calls: Map<string, (...args: any[]) => Promise<string>>;
@@ -9,13 +9,13 @@ export interface GPTAgentConfig {
     instructions: string;
 }
 
-export class GptAgent {
+export class Assistant {
     assistant: OpenAI.Beta.Assistant | undefined;
     thread: OpenAI.Beta.Thread | undefined;
 
     constructor(
         private client: OpenAI,
-        private agent: GPTAgentConfig,
+        private agent: AssistantConfig,
         private outputHandler: (output: string) => void,
     ) {
     }

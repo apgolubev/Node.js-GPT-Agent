@@ -1,4 +1,4 @@
-import { GPTAgentConfig } from '../gpt/gpt-agent';
+import {AssistantConfig} from 'gpt-agent';
 
 const BASE_URL = 'https://webhook.site/ab6f90bf-1fa3-4516-846f-3413e94b2cf6';
 
@@ -18,7 +18,7 @@ async function restRequest({ method, endpoint, body }: { method: string, endpoin
     }
 }
 
-export function RestAgent(): GPTAgentConfig {
+export function RestAgent(): AssistantConfig {
     return {
         name: 'REST API Agent',
         helloMessage: `

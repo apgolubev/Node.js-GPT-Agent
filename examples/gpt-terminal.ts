@@ -1,12 +1,11 @@
-import {GptAgent} from './gpt/gpt-agent';
 import {Terminal} from './terminal/terminal';
 import {WeatherAgent} from './agents/wttr-agent';
 import {TelegramManager} from './agents/telegram-manager';
 import {OpenAI} from 'openai';
 import {RestAgent} from './agents/rest-agent';
 import {FileSystemAgent} from './agents/fs-agent';
-import {GPTCombineAgents} from './gpt/gpt-combine-agents';
 import {MermaidAgent} from './agents/mermaid-agent';
+import {GPTAgent} from 'gpt-agent';
 
 export const OpenAIClient = new OpenAI({
     apiKey: 'your-key',
@@ -16,9 +15,9 @@ async function start() {
     /*
         You can combine agents or use one
     */
-    const agent = new GptAgent(
+    const agent = new GPTAgent.Assistant(
         OpenAIClient,
-        GPTCombineAgents([
+        GPTAgent.combineAssistants([
             FileSystemAgent(),
             MermaidAgent(),
             RestAgent(),

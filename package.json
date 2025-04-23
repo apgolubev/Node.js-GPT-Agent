@@ -1,14 +1,23 @@
 {
-  "name": "Open Source GPTAgent - OpenAI",
-  "version": "1.0.0",
+  "name": "gpt-agent",
+  "version": "0.1.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "start": "tsx src/gpt-terminal.ts",
-    "build": "esbuild src/gpt-terminal.ts --bundle --platform=node --target=node18 --outfile=dist/gpt-terminal.js"
+    "start": "tsx examples/gpt-terminal.ts",
+    "build": "tsc",
+    "build:bundle": "esbuild src/index.ts --bundle --platform=node --target=node18 --outfile=dist/gpt-agent.js",
+    "npm:preview": "npm run build && mkdir -p preview && npm pack && tar -xvzf *.tgz -C preview && rm -rf node_modules/gpt-agent && mv preview/package node_modules/gpt-agent && rm -rf preview && rm gpt-agent-*.tgz"
   },
+  "files": [
+    "dist"
+  ],
+  "author": "Aleksandr Golubev https://github.com/apgolubev",
+  "license": "MIT",
   "dependencies": {
+    "@types/pako": "^2.0.3",
     "openai": "^4.95.0",
-    "pako": "^2.1.0",
-    "@types/pako": "^2.0.3"
+    "pako": "^2.1.0"
   },
   "devDependencies": {
     "tsx": "^4.19.3",

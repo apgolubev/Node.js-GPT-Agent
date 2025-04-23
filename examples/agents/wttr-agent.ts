@@ -1,4 +1,4 @@
-import {GPTAgentConfig} from '../gpt/gpt-agent';
+import {AssistantConfig} from 'gpt-agent';
 
 function getWttr(arg: { [key: string]: any }): Promise<string> {
     return new Promise((resolve, reject) => {
@@ -15,7 +15,7 @@ function getWttr(arg: { [key: string]: any }): Promise<string> {
     });
 }
 
-export function WeatherAgent(): GPTAgentConfig {
+export function WeatherAgent(): AssistantConfig {
     return {
         name: 'Weather agent',
         helloMessage: 'This bot provides weather updates for a city.',

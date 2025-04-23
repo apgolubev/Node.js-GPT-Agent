@@ -1,4 +1,4 @@
-import { GPTAgentConfig } from '../gpt/gpt-agent';
+import {AssistantConfig} from 'gpt-agent';
 import pako from 'pako';
 
 function pakoMermaid(code: string) {
@@ -32,7 +32,7 @@ async function mermaidRequest({ diagram }: { diagram: string }): Promise<string>
     return `Diagram URL: ${url}`;
 }
 
-export function MermaidAgent(): GPTAgentConfig {
+export function MermaidAgent(): AssistantConfig {
     return {
         name: 'Mermaid Diagram Agent',
         helloMessage: `

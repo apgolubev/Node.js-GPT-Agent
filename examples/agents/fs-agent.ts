@@ -1,4 +1,4 @@
-import { GPTAgentConfig } from '../gpt/gpt-agent';
+import {AssistantConfig} from 'gpt-agent';
 import fs from 'fs/promises';
 
 async function fileSystemOperation({ action, filePath, data }: { action: string, filePath: string, data?: string }): Promise<string> {
@@ -30,7 +30,7 @@ async function fileSystemOperation({ action, filePath, data }: { action: string,
     }
 }
 
-export function FileSystemAgent(): GPTAgentConfig {
+export function FileSystemAgent(): AssistantConfig {
     return {
         name: 'File System Agent',
         helloMessage: `
