@@ -5,7 +5,7 @@ import {OpenAI} from 'openai';
 import {RestAgent} from './agents/rest-agent';
 import {FileSystemAgent} from './agents/fs-agent';
 import {MermaidAgent} from './agents/mermaid-agent';
-import {GPTAgent} from 'gpt-agent';
+import {GPTAgent} from '@apgolubev/gpt-agent';
 
 export const OpenAIClient = new OpenAI({
     apiKey: 'your-key',

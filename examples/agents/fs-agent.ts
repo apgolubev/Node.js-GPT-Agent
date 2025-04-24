@@ -1,4 +1,4 @@
-import {AssistantConfig} from 'gpt-agent';
+import {AssistantConfig} from '@apgolubev/gpt-agent';
 import fs from 'fs/promises';
 
 async function fileSystemOperation({ action, filePath, data }: { action: string, filePath: string, data?: string }): Promise<string> {

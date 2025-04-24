@@ -13,6 +13,13 @@ It can be deployed on a Node.js server, in a browser, Electron, or any terminal,
 3. Text directly and assign tasks to the agent right in the terminal!
 ![terminal.png](doc/terminal.png)
 
+#### NPM package:
+- npm i @apgolubev/gpt-agent
+- const agent = new GPTAgent.Assistant(OpenAI, …);
+- agent.send();
+- agent.init('gpt-4.1-mini');
+- agent.sendToGPT('User prompt');
+
 ### OpenAI Assistant
 The latest and most efficient OpenAI API using Assistant and gpt-4.1-mini with token caching in the model.
 

@@ -1,12 +1,12 @@
 {
-  "name": "gpt-agent",
+  "name": "@apgolubev/gpt-agent",
   "version": "0.1.0",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "start": "npm run npm:preview && tsx examples/gpt-terminal.ts",
     "build": "tsc",
-    "npm:preview": "npm run build && mkdir -p preview && npm pack && tar -xvzf *.tgz -C preview && rm -rf node_modules/gpt-agent && mv preview/package node_modules/gpt-agent && rm -rf preview && rm gpt-agent-*.tgz"
+    "npm:preview": "npm run build && mkdir -p preview && npm pack && tar -xvzf *.tgz -C preview && mkdir node_modules/@apgolubev && rm -rf node_modules/@apgolubev/gpt-agent && mv preview/package node_modules/@apgolubev/gpt-agent && rm -rf preview && rm apgolubev-gpt-agent-*.tgz"
   },
   "files": [
     "dist"

@@ -1,4 +1,4 @@
-import {AssistantConfig} from 'gpt-agent';
+import {AssistantConfig} from '@apgolubev/gpt-agent';
 
 const BASE_URL = 'https://webhook.site/ab6f90bf-1fa3-4516-846f-3413e94b2cf6';
 

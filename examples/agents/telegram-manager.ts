@@ -1,4 +1,4 @@
-import {AssistantConfig} from 'gpt-agent';
+import {AssistantConfig} from '@apgolubev/gpt-agent';
 
 function sendToBot(arg: { [key: string]: any }): Promise<string> {
     const token = arg.token;

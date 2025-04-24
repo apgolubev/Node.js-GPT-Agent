@@ -1,4 +1,4 @@
-import {AssistantConfig} from 'gpt-agent';
+import {AssistantConfig} from '@apgolubev/gpt-agent';
 
 function getWttr(arg: { [key: string]: any }): Promise<string> {
     return new Promise((resolve, reject) => {

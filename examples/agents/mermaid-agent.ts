@@ -1,4 +1,4 @@
-import {AssistantConfig} from 'gpt-agent';
+import {AssistantConfig} from '@apgolubev/gpt-agent';
 import pako from 'pako';
 
 function pakoMermaid(code: string) {

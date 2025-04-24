@@ -1,4 +1,5 @@
 node_modules/
+obsidian/
 .idea
 .DS_Store
 dist
