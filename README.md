@@ -40,14 +40,14 @@ You can use this template to build your own internal MCP platform.
 
 ### Agent Templates
 Examples of agents with configured Tools (function_call):
-- [rest-agent](src/agents/rest-agent.ts) - for interacting with REST APIs;
-- [wttr-agent.ts](src/agents/wttr-agent.ts) - Open API for retrieving weather data from various cities;
-- [fs-agent.ts](src/agents/fs-agent.ts) - for local file management and File System interactions;
-- [mermaid-agent](src/agents/mermaid-agent.ts) - for generating and sharing diagrams and charts;
-- [telegram-manager](src/agents/telegram-manager.ts) - for sending messages from Telegram bots to chats and groups.
+- [rest-agent](examples/agents/rest-agent.ts) - for interacting with REST APIs;
+- [wttr-agent.ts](examples/agents/wttr-agent.ts) - Open API for retrieving weather data from various cities;
+- [fs-agent.ts](examples/agents/fs-agent.ts) - for local file management and File System interactions;
+- [mermaid-agent](examples/agents/mermaid-agent.ts) - for generating and sharing diagrams and charts;
+- [telegram-manager](examples/agents/telegram-manager.ts) - for sending messages from Telegram bots to chats and groups.
 
 ### Combine Agents
-[gpt-combine-agents.ts](src/gpt/gpt-combine-agents.ts) allows combining agents and sequentially performing complex chains of operations.
+[gpt-combine-agents.ts](src/combine-assistants.ts) allows combining agents and sequentially performing complex chains of operations.
 
 ### Support author
 [!["Buy us ☕️ coffee and 🐶 treat ❤️"](https://github.com/apgolubev/apgolubev/blob/main/assets/patreon-buy-coffee-and-treat.png?raw=true)](https://patreon.com/user?u=77885474)
