@@ -47,7 +47,7 @@ Examples of agents with configured Tools (function_call):
 - [telegram-manager](examples/agents/telegram-manager.ts) - for sending messages from Telegram bots to chats and groups.
 
 ### Combine Agents
-[gpt-combine-agents.ts](src/combine-assistants.ts) allows combining agents and sequentially performing complex chains of operations.
+[combine-assistants.ts](src/combine-assistants.ts) allows combining agents and sequentially performing complex chains of operations.
 
 ### Support author
 [!["Buy us ☕️ coffee and 🐶 treat ❤️"](https://github.com/apgolubev/apgolubev/blob/main/assets/patreon-buy-coffee-and-treat.png?raw=true)](https://patreon.com/user?u=77885474)
