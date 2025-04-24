@@ -14,6 +14,7 @@ It can be deployed on a Node.js server, in a browser, Electron, or any terminal,
 ![terminal.png](doc/terminal.png)
 
 #### NPM package:
+https://www.npmjs.com/package/@apgolubev/gpt-agent
 - npm i @apgolubev/gpt-agent
 - const agent = new GPTAgent.Assistant(OpenAI, …);
 - agent.send();
